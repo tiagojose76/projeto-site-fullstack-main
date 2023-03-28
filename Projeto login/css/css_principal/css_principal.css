@@ -1,0 +1,51 @@
+body {
+  background-color: #041122;
+}
+
+.links {
+  position: fixed; /*Fixa a posição*/
+
+  top: 0; /*top e right posicionam na parte superior*/
+  right: 0;
+
+  display: flex; /*container flexivel OBS:  duvidas!*/
+
+  /*
+  Agora que é um container flexível, pode-se utilizar a propriedade da flex box!
+  Com isso posso usar o flex-direction para definir a direção dos links, que nesse caso é row, para deixar um do lado do outro.
+  */
+  flex-direction: row;
+
+  /*Agora usamos o flex-start alinha os links na direita da linha.*/
+  justify-content: flex-start;
+
+  /*centraliza verticalmente os links na linha.*/
+  align-items: flex-end;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: right;
+  float: right;
+  margin-right: 40px;
+  font-family: Arial;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+}
+
+.lista_header {
+  text-align: right;
+}
+
+.logo {
+  margin-left: 15px; /* Essa linha foi adicionada para com o intuito de remover os*/
+  max-width: 7%;
+  height: auto;
+  margin-top: 0px;
+}
